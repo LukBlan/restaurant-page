@@ -1,1 +1,3 @@
-console.log("test");
+import {name} from "./name"
+
+name("fede");
