@@ -1,3 +1,3 @@
-import {name} from "./name"
+import {generateNavBar} from "./components/page/page.js";
 
-name("fede");
+document.body.append(generateNavBar());
