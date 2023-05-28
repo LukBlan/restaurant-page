@@ -1,27 +1,17 @@
-export {generateNavBar};
-import './../../styles.css';
+import "./../../styles.css"
+import {generateNavBar} from "../navbar/nav.js";
 
-function generatePageStructure() {
-  const nav = generateNavBar();
+export {generatePage}
+
+function generatePage() {
+    const wrapper = generateContentWrapper();
+    const navBar = generateNavBar();
+    wrapper.append(navBar)
+    return wrapper;
 }
 
-function generateNavBar() {
-  const nav = document.createElement("nav");
-  const header = document.createElement("h1");
-  const tabList = generateTabList();
-  nav.append(header);
-  nav.append(tabList);
-  nav.classList.add("test");
-  return nav;
-}
-
-function generateTabList() {
-  const list = document.createElement("li");
-  const homeTab = document.createElement("li");
-  const menuTab = document.createElement("li");
-  const contactTab = document.createElement("li");
-  list.append(homeTab);
-  list.append(menuTab);
-  list.append(contactTab);
-  return list;
+function generateContentWrapper() {
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("content-wrapper");
+    return wrapper;
 }

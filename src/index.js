@@ -1,3 +1,4 @@
-import {generateNavBar} from "./components/page/page.js";
+import {generatePage} from "./components/page/page.js";
 
-document.body.append(generateNavBar());
+
+document.body.append(generatePage());
