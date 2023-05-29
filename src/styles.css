@@ -50,11 +50,11 @@ h1 {
 }
 
 .tab-menu li {
-  border-bottom: 2px ridge black;
+  border-bottom: 1px solid black;
 }
 
 .tab-menu li:hover {
   cursor: pointer;
-  border-bottom: 2px ridge white;
+  border-bottom: 1px solid white;
   transition: all 0.5s;
 }
