@@ -26,6 +26,35 @@ body {
 }
 
 nav {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: min-content min-content;
+  color: white;
   background-color: black;
   opacity: 0.7;
+  gap: 30px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 20px;
+}
+
+.tab-menu {
+  display: flex;
+  gap: 30px;
+  font-size: 2rem;
+  list-style: none;
+  padding: 10px;
+}
+
+.tab-menu li {
+  border-bottom: 2px ridge black;
+}
+
+.tab-menu li:hover {
+  cursor: pointer;
+  border-bottom: 2px ridge white;
+  transition: all 0.5s;
 }
