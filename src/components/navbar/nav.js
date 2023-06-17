@@ -1,5 +1,7 @@
 export {generateNavBar};
+
 import '../../styles.css';
+import {emit} from '../../pubsub.js'
 
 const tabList = document.createElement("ul");
 
@@ -17,7 +19,7 @@ function getTabClicked(event) {
   console.log(event.target.nodeName);
   if (event.target.nodeName === "LI") {
     const position = Array.from(tabList.childNodes).indexOf(event.target);
-
+    emit("tab-clicked", position);
   }
 }
 

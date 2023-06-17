@@ -1,9 +1,9 @@
 import {generateTitleElement} from "../tabs-functions/tabs-functions.js";
-export {generateHomeTab}
+export {generateContactTab}
 
-function generateHomeTab() {
+function generateContactTab() {
   const container = document.createElement("div");
-  const title = generateTitleElement("Home");
+  const title = generateTitleElement("Contact");
   container.append(title);
   return container;
 }
