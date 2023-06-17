@@ -1,5 +1,6 @@
 import "./../../styles.css"
 import {generateNavBar} from "../navbar/nav.js";
+import {generateHomeTab} from "../contact-tab/contact-tab";
 
 export {generatePage}
 

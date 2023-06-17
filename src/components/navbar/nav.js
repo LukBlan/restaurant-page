@@ -1,6 +1,8 @@
 export {generateNavBar};
 import '../../styles.css';
 
+const tabList = document.createElement("ul");
+
 function generateNavBar() {
   const nav = document.createElement("nav");
   const header = document.createElement("h1");
@@ -11,8 +13,15 @@ function generateNavBar() {
   return nav;
 }
 
+function getTabClicked(event) {
+  console.log(event.target.nodeName);
+  if (event.target.nodeName === "LI") {
+    const position = Array.from(tabList.childNodes).indexOf(event.target);
+
+  }
+}
+
 function generateTabList() {
-  const tabList = document.createElement("ul");
   const homeTab = document.createElement("li");
   const menuTab = document.createElement("li");
   const contactTab = document.createElement("li");
@@ -25,5 +34,6 @@ function generateTabList() {
   tabList.append(homeTab);
   tabList.append(menuTab);
   tabList.append(contactTab);
+  tabList.addEventListener("click", getTabClicked);
   return tabList;
 }
