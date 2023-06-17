@@ -5,6 +5,8 @@ import {generateContactTab} from "../contact-tab/contact-tab";
 
 export {generatePage}
 
+const wrapper = generateContentWrapper();
+
 subscribe("tab-clicked", renderTabOnScreen);
 
 //const homeSection = generateHomeTab();
@@ -18,11 +20,10 @@ const sections = {
 }
 
 function renderTabOnScreen(position) {
-  document.body.append(sections[position]);
+  wrapper.append(sections[position]);
 }
 
 function generatePage() {
-  const wrapper = generateContentWrapper();
   const navBar = generateNavBar();
   wrapper.append(navBar)
   return wrapper;
