@@ -19,10 +19,11 @@ body {
   height: 100%;
   display: grid;
   grid-template-rows: min-content;
-  background-image: url("./restaurant.jpg");
+  background-image: url(http://localhost:63342/restaurant-page/dist/1b134c6….jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  gap: 30px;
 }
 
 nav {
@@ -59,4 +60,14 @@ h1 {
   color: white;
   transition: all 0.5s;
   border-bottom: 1px solid white;
+}
+
+.tab-section {
+  justify-self: center;
+  background: black;
+  display: grid;
+  grid-template-rows: min-content;
+  align-self: flex-start;
+  color: white;
+  padding: 10px;
 }
