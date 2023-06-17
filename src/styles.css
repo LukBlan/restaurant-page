@@ -19,7 +19,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-rows: min-content;
-  background-image: url(http://localhost:63342/restaurant-page/dist/1b134c6….jpg);
+  background-image: url("./restaurant.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
