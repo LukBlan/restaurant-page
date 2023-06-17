@@ -1,7 +1,7 @@
 import "./../../styles.css"
 import {generateNavBar} from "../navbar/nav.js";
 import {subscribe} from "../../pubsub.js";
-import {generateContactTab} from "../contact-tab/contact-tab";
+import {generateContactSection} from "../contact-section/contact-tab";
 
 export {generatePage}
 
@@ -11,7 +11,7 @@ subscribe("tab-clicked", renderTabOnScreen);
 
 //const homeSection = generateHomeTab();
 //const menuSection = generateMenuTab();
-const contactSection = generateContactTab();
+const contactSection = generateContactSection();
 
 const sections = {
   //"0": homeSection,
