@@ -8,7 +8,7 @@ const tabList = document.createElement("ul");
 function generateNavBar() {
   const nav = document.createElement("nav");
   const header = document.createElement("h1");
-  header.textContent = "Restaurant Name"
+  header.textContent = "Duke’s Table"
   const tabList = generateTabList();
   nav.append(header);
   nav.append(tabList);
