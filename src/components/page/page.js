@@ -5,7 +5,7 @@ import {generateContactSection} from "../contact-section/contact-section";
 import {generateMenuSection} from "../menu-section/menu-section";
 import {generateHomeSection} from "../home-section/home-section";
 
-export {generatePage}
+export {generatePage, displayFirstLoad}
 
 const wrapper = generateContentWrapper();
 
@@ -14,6 +14,7 @@ subscribe("tab-clicked", renderTabOnScreen);
 const homeSection = generateHomeSection();
 const menuSection = generateMenuSection();
 const contactSection = generateContactSection();
+let currentSection;
 
 const sections = {
   "0": homeSection,
@@ -21,8 +22,16 @@ const sections = {
   "2": contactSection,
 }
 
+function displayFirstLoad() {
+  currentSection = homeSection;
+  wrapper.append(currentSection);
+}
+
 function renderTabOnScreen(position) {
-  wrapper.append(sections[position]);
+  const sectionToRender = sections[position];
+  wrapper.removeChild(currentSection);
+  currentSection = sectionToRender;
+  wrapper.append(sectionToRender);
 }
 
 function generatePage() {

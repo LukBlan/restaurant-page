@@ -1,3 +1,6 @@
 import {generatePage} from "./components/page/page.js";
+import {displayFirstLoad} from "./components/page/page.js";
 
-document.body.append(generatePage());
+const webPage = generatePage();
+document.body.append(webPage);
+displayFirstLoad();
