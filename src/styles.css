@@ -17,7 +17,13 @@
   gap: 30px;
 }
 
+.old-restaurant-img {
+  cursor: pointer;
+  border: 10px ridge;
+}
+
 nav {
+  text-align: center;
   display: grid;
   justify-content: center;
   grid-template-rows: min-content min-content;
