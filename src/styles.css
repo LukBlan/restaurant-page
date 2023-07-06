@@ -22,6 +22,7 @@ body {
 .old-restaurant-img {
   cursor: pointer;
   border: 10px ridge;
+  width: 85%;
 }
 
 nav {
@@ -62,6 +63,9 @@ h1 {
 }
 
 .tab-section {
+  width: 50%;
+  justify-items: center;
+  gap: 20px;
   background-color: rgba(0,0,0,0.9);
   text-align: center;
   justify-self: center;
@@ -69,5 +73,5 @@ h1 {
   grid-template-rows: min-content;
   align-self: flex-start;
   color: white;
-  padding: 10px;
+  padding: 20px;
 }
