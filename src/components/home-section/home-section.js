@@ -4,17 +4,20 @@ export {generateHomeSection}
 
 function generateHomeSection() {
   const container = document.createElement("div");
-  const sectionTitle = generateTitle("Since 1943");
+  const titleSection = generateTextElement("h2", "Open Since 1943");
+  const subText = generateTextElement("p", "Best Restaurant of Europe");
   const image = generateImage();
 
   container.classList.add("tab-section");
-  container.append(sectionTitle);
+
+  container.append(titleSection);
+  container.append(subText);
   container.append(image);
   return container;
 }
 
-function generateTitle(text) {
-  const title = document.createElement("h2");
+function generateTextElement(element, text) {
+  const title = document.createElement(element);
   title.innerText = text;
   return title;
 }

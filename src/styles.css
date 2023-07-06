@@ -12,6 +12,10 @@ body {
   background-size: cover;
 }
 
+h2 {
+  font-family: sans-serif;
+}
+
 .content-wrapper {
   min-height: 100vh;
   display: grid;
@@ -32,8 +36,8 @@ nav {
   grid-template-rows: min-content min-content;
   color: white;
   background-color: black;
-  background-color: rgba(0,0,0,0.9);
-  gap: 30px;
+  background-color: rgba(0,0,0,0.85);
+  gap: 10px;
   font-weight: bold;
 }
 
