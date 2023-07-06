@@ -6,14 +6,16 @@
   user-select: none;
 }
 
+body {
+  background-image: url("restaurant.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .content-wrapper {
   min-height: 100vh;
   display: grid;
   grid-template-rows: min-content;
-  background-image: url("./restaurant.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   gap: 30px;
 }
 
