@@ -85,11 +85,21 @@ h1 {
   grid-template-columns: min-content min-content;
   gap: 20px 40px;
   justify-content: center;
+  justify-items: flex-start;
 }
 
-.menu-image {
+.food-card {
+  display: flex;
+  gap: 10px;
+}
+
+.food-image {
   border: 2px ridge;
   border-radius: 5px;
   width: 100px;
   height: 100px;
+}
+
+.food-info {
+  white-space: nowrap;
 }
