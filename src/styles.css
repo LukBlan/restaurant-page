@@ -80,10 +80,11 @@ h1 {
   padding: 20px;
 }
 
-.food-section {
+.tab-section.food-section {
   display: grid;
   grid-template-columns: min-content min-content;
   gap: 20px 40px;
+  justify-content: center;
 }
 
 .menu-image {
