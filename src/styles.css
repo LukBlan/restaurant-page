@@ -79,3 +79,16 @@ h1 {
   color: white;
   padding: 20px;
 }
+
+.food-section {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  gap: 20px 40px;
+}
+
+.menu-image {
+  border: 2px ridge;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+}
