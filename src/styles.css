@@ -39,6 +39,7 @@ nav {
   background-color: rgba(0,0,0,0.85);
   gap: 10px;
   font-weight: bold;
+  border-bottom: 1px solid  rgba(255,255,255,0.3);
 }
 
 h1 {
@@ -70,7 +71,7 @@ h1 {
   width: 50%;
   justify-items: center;
   gap: 20px;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.75);
   text-align: center;
   justify-self: center;
   display: grid;
@@ -78,23 +79,29 @@ h1 {
   align-self: flex-start;
   color: white;
   padding: 20px;
+  border: 1px solid  rgba(255,255,255,0.4);
 }
 
 .tab-section.food-section {
   display: grid;
-  grid-template-columns: min-content min-content;
+  grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
   gap: 20px 40px;
-  justify-content: center;
-  justify-items: flex-start;
+  justify-items: center;
 }
 
 .food-card {
-  display: flex;
+  display: grid;
   gap: 10px;
+  background-color: rgba(0,0,0,0.4);
+  align-items: center;
+  padding: 10px;
+  justify-items: center;
+  width: 80%;
+  border: 1px solid  rgba(255,255,255,0.3);
 }
 
 .food-image {
-  border: 2px ridge;
+  border: 2px ridge  rgba(255,255,255,0.3);
   border-radius: 5px;
   width: 100px;
   height: 100px;
