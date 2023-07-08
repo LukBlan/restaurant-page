@@ -98,6 +98,11 @@ h1 {
   justify-items: center;
   width: 80%;
   border: 1px solid  rgba(255,255,255,0.3);
+  cursor: pointer;
+}
+
+.food-card:hover {
+  background-color: rgba(0,0,0,0.6);
 }
 
 .food-image {
