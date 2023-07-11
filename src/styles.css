@@ -88,10 +88,6 @@ h1 {
   justify-items: center;
 }
 
-.tab-section.contact-section {
-  justify-items: self-start;
-}
-
 .food-card {
   display: grid;
   gap: 10px;
@@ -124,4 +120,8 @@ h1 {
   font-weight: bold;
   text-decoration: none;
   font-size: 20px;
+}
+
+.address-image {
+  width: 100%;
 }
