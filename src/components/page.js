@@ -1,9 +1,9 @@
-import "./../../styles.css"
-import {generateNavBar} from "../navbar/nav.js";
-import {subscribe} from "../../pubsub.js";
-import {generateContactSection} from "../contact-section/contact-section";
-import {generateMenuSection} from "../menu-section/menu-section";
-import {generateHomeSection} from "../home-section/home-section";
+import "../styles.css"
+import {generateNavBar} from "./nav.js";
+import {subscribe} from "../pubsub.js";
+import {generateContactSection} from "./contact-section/contact-section";
+import {generateMenuSection} from "./menu-section/menu-section";
+import {generateHomeSection} from "./home-section/home-section";
 
 export {generatePage, displayFirstLoad}
 

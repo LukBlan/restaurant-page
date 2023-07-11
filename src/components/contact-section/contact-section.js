@@ -1,4 +1,3 @@
-import {generateSection} from "../tabs-functions/tabs-functions.js";
 import Address from "./address-location.jpg"
 
 export {generateContactSection}

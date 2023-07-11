@@ -1,7 +1,7 @@
 export {generateNavBar};
 
-import '../../styles.css';
-import {emit} from '../../pubsub.js'
+import '../styles.css';
+import {emit} from '../pubsub.js'
 
 const tabList = document.createElement("ul");
 
