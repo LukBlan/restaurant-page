@@ -56,15 +56,14 @@ h1 {
 }
 
 .tab-menu li {
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.75);
   border-bottom: 1px solid rgba(0,0,0,0);
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .tab-menu li:hover {
-  cursor: pointer;
   color: white;
-  transition: all 0.5s;
-  border-bottom: 1px solid white;
 }
 
 .tab-section {
@@ -98,6 +97,7 @@ h1 {
   width: 80%;
   border: 1px solid  rgba(255,255,255,0.3);
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .food-card:hover {
